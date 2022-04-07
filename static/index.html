@@ -1,0 +1,22 @@
+<!doccype html>
+    <html>
+
+    <head>
+    </head>
+
+    <body>
+        <div id="container"></div>
+        <script>
+            window.RufflePlayer = window.RufflePlayer || {};
+            window.addEventListener("load", (event) => {
+                const ruffle = window.RufflePlayer.newest();
+                const player = ruffle.createPlayer();
+                const container = document.getElementById("container");
+                container.appendChild(player);
+                player.load("main.swf");
+            });
+        </script>
+        <script src="js/ruffle.js"></script>
+    </body>
+
+    </html>
