@@ -6,5 +6,5 @@ Requires:
 - Flask >= 2.0.0
 
 Demo: 
-- Cloudflare: https://bvn26.aya1.top
-- Render: https://bvn.onrender.com
+- On Render: https://bvn26.aya1.top
+- On Cloudflare: https://bvn26-cdn.aya1.top
