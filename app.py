@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def entry():
-    return redirect("/index.html")
+    return redirect("index.html")
 
 
 @app.route("/<path:path>")
