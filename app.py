@@ -1,11 +1,15 @@
-from threading import Thread
-from flask import Flask
+from flask import Flask, redirect
 
 app = Flask(__name__)
 
 
+@app.route("/")
+def entry():
+    return redirect("/index.html")
+
+
 @app.route("/<path:path>")
-def hello_world(path):
+def ruffle(path):
     return app.send_static_file(path)
 
 
